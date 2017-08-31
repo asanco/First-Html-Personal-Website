@@ -17,6 +17,9 @@ body{
   background-image: url("../blue.jpg");;
   }
 
+/*Me parecería bueno que pusieras un multiple selector element para darle la misma característica (height: 500px) a las clases .slide1, .slide2 y .slide3 */
+/*Tal vez podrías cambiar el uso de px y cm para que se ajuste mejor a otros navegadores de otros tamaños */
+
 .slide1{
  
   height: 500px;
