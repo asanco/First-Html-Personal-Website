@@ -38,7 +38,8 @@
  
     <div class="navbar-header">
  
-     
+     <!--Laura Bello: Podrías cambiarle el color a este botón, porque desde el celular no se ve y no se sabe que ahí están las opciones-->
+	    
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
  
       
@@ -51,6 +52,9 @@
  
     </div>
 
+	  <!--Laura Bello: Me parece que se ve muy bien que la barra se mueva a medida que se baja o sube por la página y que no haya sido necesario
+hacer tantas clases HTML, sino que hayas puesto todo en el mismo lugar. También me gustó que pusieras la opción de cambiar el idioma-->
+	  
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#" id="linkHome">Home<span class="sr-only">(current)</span></a></li>
@@ -79,9 +83,14 @@
   
   <span style="display:block; height: 10px ;"></span>
 
+	<!-- Laura Bello: Como te escribí en el css, me parecería bueno que usaras menos los px -->
+	
   <hr id="About">
   <span style="display:block; height: 70px ;"></span>
 <div class="row">
+	
+	<!-- Laura Bello: Considero que es muy bueno que hayas definido cuantas columnas usar dependiendo del dispositivo, porque así puedes controlar
+como se va a ver la página sin importar desde donde se acceda.-->
 	
 	<div class="col-lg-6 col-md-5 col-sm-12 col-xs-12" id="colAbout">
 		<div class="jumbotron" >
@@ -98,7 +107,10 @@
   <span style="display:block; height: 10px ;"></span>
 
   <div class="container">
-  
+	  
+  <!-- Laura Bello: Me gusta como se ve que las imágenes crezcan un poco al pasar el mouse por encima. También me parece que la organización del grid
+es buena, porque no todas las imágenes están del mismo tamaño entonces no se ve monótono-->
+	  
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gutter-0"> 
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 imagenGrid"><img src="1.jpg" width="100%" height="100%"></div>
@@ -124,6 +136,11 @@
   </div>
 </div>
 
+	<!--Laura Bello: Tal vez podrías poner todo lo de style, que pusiste acá en el HTML, en el css, porque se puede recargar un poco a la hora de leer
+el código. Aunque entiendo que de pronto lo pones acá para no tener que irte al css para poner solo width y height, pienso que pasando todo eso
+al CSS te ahorraría muchas palabras y características repetidas que pusiste en el index. Además, si algún día quieres cambiar esas medidas, no tendrías que ir
+tag por tag, cambiando todo sino que sólo lo cambias una vez en el CSS.-->
+	
 <span style="display:block; height: 50px ;" id="Habilidades"></span>
 
 <div class="row">
@@ -300,6 +317,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+	<!--Laura Bello: Podrías poner todo lo que está dentro del script dentro de una clase .js para que no se llene tanto este archivo. Además, como
+tienes 3 index, uno para cada idioma, en caso de que quieras cambiar algo de la función, tendrías que cambiarlo 3 veces, pero si lo pones
+dentro de una sola clase de js, pues solo tendrías que cambiarlo una vez y el código sería más mantenible.-->
 <script>  
   $(document).ready(function(){
     
@@ -335,4 +355,9 @@ $('.imgGif').click(function () {
 <script src="js/wow.min.js"></script>
 
 </body>
+
+<!--Laura Bello Comentario final: En mi opinión, tu página personal está muy bien, me parece que cumple con el objetivo de dar a conocer más de ti, 
+además considero que los efectos de animación que le pusiste le dan vida. Luego de ver que las primeras imágenes se agrandan un poco al 
+pasar el mouse, da curiosidad ver que es lo que irán a hacer las imágenes de las siguientes secciones. Leer el código no fue difícil porque
+está organizado y los nombres de los id y clases son explícitos, lo que es bueno para entender mejor-->
 </html>
